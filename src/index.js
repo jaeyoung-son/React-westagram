@@ -2,8 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Main from './pages/Main/Main';
-//import Login from './pages/Login/Login';
+//import Main from './pages/Main/Main';
+import Login from './pages/Login/Login';
 
 
-ReactDOM.render(<Main />, document.getElementById('root'));
+ReactDOM.render(<Login />, document.getElementById('root'));

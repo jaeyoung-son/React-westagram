@@ -11,26 +11,17 @@ class Input extends Component {
         }
     }
 
-    classSelect = () => {
-        if (this.state.id.length >= 1 && this.state.pw.length >= 1) {
-            this.setState({class: 'blue'})
-        } else {
-            this.setState({class: 'button'})
-        }
-    }
 
      idHandle= (e) => {
         this.setState({
             id: e.target.value
         })
-        this.classSelect()
     }
 
     pwHandle = (e) => {
         this.setState({
             pw: e.target.value
         })
-        this.classSelect()
     }
 
     render () {
@@ -50,7 +41,7 @@ class Input extends Component {
                     value={this.state.pw}
                     onChange={this.pwHandle}
                 />
-                <button className={this.state.class}>로그인</button>
+                <button className={this.state.id.length >= 1 ? (this.state.pw.length >= 1 ? 'blue' : 'button') : 'button'}>로그인</button>
             </div>
         )
     }
