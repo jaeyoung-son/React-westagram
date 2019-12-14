@@ -1,0 +1,47 @@
+.right_follow {
+    border: 1px solid #E6E6E6;
+    margin-top: 20px;
+    background-color: white;
+
+    img {
+        width: 32px;
+        border-radius: 50%;
+        margin-left: 5px;
+    }
+    
+}
+
+.follow_top {
+    margin: 10px;
+    position: relative;
+}
+
+.top_right {
+    position: relative;
+    right: -100px;
+}
+
+.follow_main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.follow_center p {
+    margin: 0 0 0 5px
+}
+
+.follow_right {
+    position: relative;
+    right: 10px;
+    color: #3897EF;
+    font-weight: bold;
+
+    p {
+        position: relative;
+        right: -50px;
+    }
+    
+}

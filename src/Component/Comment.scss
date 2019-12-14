@@ -1,0 +1,40 @@
+.comment p {
+    margin: 1px 0 0 10px;
+    font-weight: bold;
+}
+
+p span {
+    font-weight: normal;
+    margin-left: 8px;
+}
+.comment .gray {
+    color: #A5A5A5;
+}
+
+.comment_input {
+    border-top: 1px solid #EFEFEF;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    input {
+        width: 80%;
+        border: none;
+        resize: none;
+        height: 20px;
+        font-size: 15px;
+        margin-left: 10px;
+        max-height: 80px;
+    }
+
+    button {
+        position: relative;
+        border: 0;
+        right: -50px;
+        background: 0 0;
+        color: rgba(var(--h5f,56,151,240),1);
+        font-size: inherit;
+    }
+}
