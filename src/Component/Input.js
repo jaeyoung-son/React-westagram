@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+
+    
 
 class Input extends Component {
     constructor(props) {
@@ -11,6 +14,9 @@ class Input extends Component {
         }
     }
 
+    goToMain() {
+        this.props.history.push('/Main')
+    }
 
      idHandle= (e) => {
         this.setState({
@@ -41,10 +47,14 @@ class Input extends Component {
                     value={this.state.pw}
                     onChange={this.pwHandle}
                 />
-                <button className={this.state.id.length >= 1 ? (this.state.pw.length >= 1 ? 'blue' : 'button') : 'button'}>로그인</button>
+                <button 
+                    className={(this.state.id  && this.state.pw)  ? 'blue' : 'button'}
+                    onClick={this.goToMain.bind(this)}
+                    >로그인
+                </button>
             </div>
         )
     }
 }
 
-export default Input;
+export default withRouter(Input);

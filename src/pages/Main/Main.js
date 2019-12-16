@@ -5,10 +5,10 @@ import './Main.scss';
 
 function Main() {
   return (
-    <div>
+    <>
       <Nav/>
       <MainF/>
-    </div>
+    </>
   );
 }
 

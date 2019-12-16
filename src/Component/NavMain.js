@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import LogoText from '../images/LogoText.png'
+import { withRouter } from 'react-router-dom';
 import './NavMain.scss'
 
-function NavMain() {
-    return (
+class NavMain extends Component {
+
+    goToLogin () {
+        this.props.history.push('/')
+    }
+
+    render () {
+        return (
         <nav>
         <div className="nav_main">
             <div className="left_main">
@@ -16,11 +23,16 @@ function NavMain() {
                 <div className="right_main">
                 <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="."/>
                 <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="."/>
-                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="."/>
+                <img 
+                    className="click" 
+                    onClick={this.goToLogin.bind(this)} 
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" 
+                    alt="."/>
             </div>
         </div>
         </nav>
     )
 }
+}
 
-export default NavMain 
+export default withRouter(NavMain); 

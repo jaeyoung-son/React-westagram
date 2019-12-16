@@ -11,7 +11,7 @@ function RightFollow() {
             <FollowImg
               src="https://scontent-gmp1-1.cdninstagram.com/vp/1c3bad2017bf0f0bdf2d2fc4f002187c/5E7CA17B/t51.2885-19/s150x150/43913810_322671281898660_2157658734761869312_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com"
               name="jinsup9k"
-              other="_legend_a님 외 2명이..."/>
+              other="_legend_a님 외 2명이 ..."/>
             <FollowImg 
               src="https://scontent-icn1-1.cdninstagram.com/vp/498b30eefd592b4175873cd2bcdc5c21/5E695BF1/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-icn1-1.cdninstagram.com&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
               name="donghoshin0"
