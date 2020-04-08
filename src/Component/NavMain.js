@@ -10,6 +10,7 @@ class NavMain extends Component {
 
   render() {
     console.log("하이");
+    console.log("하이");
     return (
       <nav>
         <div className="nav_main">
